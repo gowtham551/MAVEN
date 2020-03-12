@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: deploy
+    get_url:
+     url: https://gowthamohio.s3.us-east-2.amazonaws.com/target/mahaLogin-1.0.war
+     dest: /etc/
